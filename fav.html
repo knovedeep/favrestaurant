@@ -2,9 +2,10 @@
     <title>Favorite Restaurants</title>
     <head> <h1>Welcome to my Restaurant Review!</h1></head>
     <body>
-        <h3>
-            Although a difficult process I have complied my top 5 favorite Restaurants:
-        </h3>
+            <details>
+                <summary>Details</summary>
+                This website contains a list of restaurants that you might enjoy visiting. Although a difficult process I have complied my top 5 favorite Restaurants within this website. 
+            </details> 
         <div>   
             <ol>
                 <li> <a href= "https://www.petesgrill.com/" target="_blank" >Pete's Grill</a> </li>
@@ -34,6 +35,7 @@
             </ol>
         </div>
         <table>
+            <caption>Table</caption>
             <tr>
                 <th>Restaurant Name</th>
                 <th>Price Range</th>
@@ -88,7 +90,7 @@
             <input type="checkbox" id="l&l hawaiian bbq" name="l&l hawaiian bbq"><br> 
 
             <label for="type">
-                What is your favorite method of enjoying your restaurant meal?
+                What is your <b>favorite</b> method of enjoying your restaurant meal?
             </label>
             <select id="method" name="method">
                 <option value="Dine-In">Dine-In</option>
@@ -96,7 +98,7 @@
                 <option value="Delivery" selected="true">Delivery</option>
             </select>
             <br/><br/>
-            <h3>Please Add your contact Information so that we can follow up with more reccomendations:</h3>
+            <h3>Please Add your <b>contact Information</b> so that we can follow up with more reccomendations:</h3>
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" value="Please fill out your first and last name"
             />
@@ -111,5 +113,10 @@
             <br/><br/>
             <input type="submit" value="Submit form" />
         </form>
+        <p>If you have any additional questions about the listed restaurants, please contact me at any of the following:</p>
+<address>
+    <a href="mailto:novedeepkr@gmail.com">email</a><br>
+    <a href="tel:+12099147215">phone</a>
+</address>
     </body>
 </html>
