@@ -1,23 +1,115 @@
 <html>
     <title>Favorite Restaurants</title>
-    <head> <h1>Welcome to my Website!</h1></head>
+    <head> <h1>Welcome to my Restaurant Review!</h1></head>
     <body>
         <h3>
             Although a difficult process I have complied my top 5 favorite Restaurants:
         </h3>
         <div>   
             <ol>
-                <li>Pete's Grill</li>
-                <img src="/Subdirectory/Images/rw-to-go_petes_grill__large.jpg" alt="Pete's Grill image" width="500">
-                <li>Kimchee Korean BBQ</li>
-                <img src="/Subdirectory/Images/kimchisantabarbaranewfront.jpg" alt="KBBQ Image" width="500">
-                <li>Tandoori Pizza Fusion Restaurant</li>
-                <img src="/Subdirectory/Images/tandooripizza.jpg" alt="KBBQ Image" width="500">
-                <li>Cheesecake Factory</li>
-                <img src="/Subdirectory/Images/cheescake.jpg" alt="KBBQ Image" width="500">
-                <li>l&l hawaiian bbq</li>
-                <img src="/Subdirectory/Images/L_and_L_San_Diego.jpg" alt="KBBQ Image" width="500">
+                <li> <a href= "https://www.petesgrill.com/" target="_blank" >Pete's Grill</a> </li>
+                <img src="/Subdirectory/Images/rw-to-go_petes_grill__large.jpg" alt="Pete's Grill image" width="200">
+                <br></br>
+
+
+                <li><a href="https://www.yelp.com/biz/kimchi-korean-bbq-santa-barbara" target="_blank">Kimchee Korean BBQ</a></li>
+                <img src="/Subdirectory/Images/kimchisantabarbaranewfront.jpg" alt="KBBQ Image" width="200">
+                <br></br>
+
+
+                <li><a href="https://www.tandooripizza.com/" target="_blank">Tandoori Pizza Fusion Restaurant</a></li>
+                <img src="/Subdirectory/Images/tandooripizza.jpg" alt="KBBQ Image" width="200">
+                <br></br>
+
+
+                <li><a href="my_kitchen.html">Novedeep's Kitchen</a></li>
+                <img src="Subdirectory\Images\myrestaurant.jpg" alt="KBBQ Image" width="200">
+                <br></br>
+
+
+                <li><a href="https://www.hawaiianbarbecue.com/" target="_blank">l&l hawaiian bbq</a></li>
+                <img src="/Subdirectory/Images/L_and_L_San_Diego.jpg" alt="KBBQ Image" width="200">
+                <br></br>
+
             </ol>
         </div>
+        <table>
+            <tr>
+                <th>Restaurant Name</th>
+                <th>Price Range</th>
+                <th>Average Reviews</th>
+            </tr>
+            <tr>
+                <td>Pete's Grill</td>
+                <td>Cheap</td>
+                <td>3.5 stars</td>
+            </tr>
+            <tr>
+                <td>Kimchee Korean BBQ</td>
+                <td>Pricey</td>
+                <td>4.2 stars</td>
+            </tr>
+            <tr>
+                <td>Tandoori Pizza</td>
+                <td>Affordable</td>
+                <td>4.4 stars</td>
+            </tr>
+            <tr>
+                <td>Novedeep's Restaurant</td>
+                <td>Affordable</td>
+                <td>4.8 stars</td>
+            </tr>
+            <tr>
+                <td>l&l hawaiian bbq</td>
+                <td>Cheap</td>
+                <td>4.1 stars</td>
+            </tr>
+        </table>
+        <h2>Where would you see yourself eating?</h2>
+        <form>
+            <label for="name">Name of Restaurant:</label>
+            <input type="text" id="name" name="name" value="Restaurant Name"
+            />
+            <p><h3>Select the restaurants you might be interested in visting:</h3></p>
+	
+            <label for="Pete's Grill">Pete's Grill</label>
+            <input type="checkbox" id="Pete's Grill" name="Pete's Grill"><br> 
+
+            <label for="Kimchee Korean BBQ">Kimchee Korean BBQ</label>
+            <input type="checkbox" id="Kimchee Korean BBQ" name="Kimchee Korean BBQ"><br> 
+
+            <label for="Tandoori Pizza">Tandoori Pizza</label>
+            <input type="checkbox" id="Tandoori Pizza" name="Tandoori Pizza"><br> 
+
+            <label for="Novedeep's Restaurant">Novedeep's Restaurant</label>
+            <input type="checkbox" id="Novedeep's Restaurant" name="Novedeep's Restaurant"><br> 
+
+            <label for="l&l hawaiian bbq">l&l hawaiian bbq</label>
+            <input type="checkbox" id="l&l hawaiian bbq" name="l&l hawaiian bbq"><br> 
+
+            <label for="type">
+                What is your favorite method of enjoying your restaurant meal?
+            </label>
+            <select id="method" name="method">
+                <option value="Dine-In">Dine-In</option>
+                <option value="Take-out">Take-out</option>
+                <option value="Delivery" selected="true">Delivery</option>
+            </select>
+            <br/><br/>
+            <h3>Please Add your contact Information so that we can follow up with more reccomendations:</h3>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" value="Please fill out your first and last name"
+            />
+            <br/><br/>
+            <label for="email">Email Address:</label>
+            <input type="text" id="email"  name="email" value="ex: user@domain"
+            />
+            <br/><br/>
+            <label for="comment"> Comments, if any: </label>
+            <br/><br/>
+            <textarea id="comment" rows="7" cols="50">Additional Comments</textarea>
+            <br/><br/>
+            <input type="submit" value="Submit form" />
+        </form>
     </body>
 </html>
